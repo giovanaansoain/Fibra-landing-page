@@ -4,31 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
   	<meta name="theme-color" content="#e40523">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400">
+    <link rel="stylesheet" href="styles/css/master.css">
     <title>Fibra tecidos</title>
   </head>
   <body>
-    <section id="top">
-      <button type="button" name="menu-button">
-        <img src="img/icons/nav-bar.svg" alt="Abrir menu">
-        <img src="img/icons/close-menu.svg" alt="Fechar menu">
-      </button>
-      <div id="logo">
-        <a href="index.html" itemprop="brand">
-          <img src="img/icons/logo.svg" alt="Fibra tecidos">
-        </a>
+    <header id="header">
+      <div class="container">
+        <button type="button" name="menu-button">
+          <img class="open-menu" src="img/icons/nav-bar.svg" alt="Abrir menu">
+          <img class="close-menu" src="img/icons/close-menu.svg" alt="Fechar menu">
+        </button>
+        <div id="logo">
+          <a href="index.html" itemprop="brand">
+            <img src="img/icons/logo.svg" alt="Fibra tecidos">
+          </a>
+        </div>
+        <nav class="menu-hamburguer">
+          <ul>
+            <li><a href="#top">Sobre</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#vantagens">Vantagens</a></li>
+            <li><a href="#quero-participar">Quero participar</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="menu-hamburguer">
-        <ul>
-          <li>Sobre</li>
-          <li>Como funciona</li>
-          <li>Vantagens</li>
-          <li>Quero participar</li>
-        </ul>
-      </div>
-    </section>
+    </header>
 
-    <section class="header">
+    <section id="top">
       <div class="cover">
         <img src="img/bobinas-de-linhas.png" alt="Foto de bobinas de linha">
         <div class="text">
@@ -36,7 +39,90 @@
           <h1>Fibra</h1>
         </div>
       </div>
+      <div class="about container">
+        <p>Somos a marca de curadoria têxtil digital que preza pela qualidade dos produtos e pela agilidade dos processos.</p>
+        <p>Selecionamos os melhores tecidos do mercado e indicamos sua adequação de uso considerando construção, gramatura e tamanho disponível.</p>
+        <p>Ajudamos você a otimizar recursos oferecendo uma estrutura adequada para vender e comprar materiais têxteis.</p>
+        <p>Conheça mais...</p>
+      </div>
     </section>
+
+    <section id="como-funciona" class="information container">
+      <h2>Como funciona</h2>
+      <div class="icon-text">
+        <img src="img/icons/n-1.svg" alt="Número 1">
+        <div class="text">
+          <p class="title">Cadastre-se na plataforma</p>
+          <p>É rápido, fácil e de graça!</p>
+        </div>
+      </div>
+
+      <div class="icon-text">
+        <img src="img/icons/n-2.svg" alt="Número 2">
+        <div class="text">
+          <p class="title">Venda seus tecidos</p>
+          <p>Plataforma intuitiva, processo de venda prático para pessoa física e empresa</p>
+        </div>
+      </div>
+
+      <div class="icon-text">
+        <img src="img/icons/n-3.svg" alt="Número 3">
+        <div class="text">
+          <p class="title">Compre bons tecidos</p>
+          <p>Tecidos variados e diferenciados do mercado, com bons preços a um clique!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="vantagens" class="information container">
+      <h2>Vantagens</h2>
+      <div class="icon-text">
+        <img src="img/icons/time.svg" alt="Menos tempo">
+        <div class="text">
+          <p class="title">Economize tempo</p>
+          <p>Não gaste seu precioso tempo com burocracias. Ele vale dinheiro!</p>
+        </div>
+      </div>
+
+      <div class="icon-text">
+        <img src="img/icons/money.svg" alt="Mais dinheiro">
+        <div class="text">
+          <p class="title">Transforme seu estoque em renda</p>
+          <p>Ganhe ao invés de gastar com depósitos, manutenção e perda de material</p>
+        </div>
+      </div>
+
+      <div class="icon-text">
+        <img src="img/icons/mouse.svg" alt="A um clique">
+        <div class="text">
+          <p class="title">Compre com facilidade e conforto</p>
+          <p>Você encontra tecidos de qualidade de forma rápida sem sair do lugar</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quero-participar" class="form container">
+      <h2>Quero participar</h2>
+      <form action="">
+        <input type="text" name="Nome" placeholder="Nome">
+        <input type="email" name="Email" placeholder="Email">
+        <input type="url" name="Facebook" placeholder="Facebook">
+        <input type="url" name="Site" placeholder="Site">
+      </form>
+      <button type="submit" name="Enviar">Enviar</button>
+    </section>
+
+    <footer>
+      <nav class="social-media">
+        <a href="https://www.facebook.com/fibratecido/">
+          <img src="img/icons/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/fibratecido/">
+          <img src="img/icons/instagram.svg" alt="Instagram">
+        </a>
+      </nav>
+      <p>Fibra © 2017 - todos os direitos reservados | CNPJ: 27.589.193/0001-14</p>
+    </footer>
 
   </body>
 </html>

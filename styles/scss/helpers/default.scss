@@ -1,0 +1,32 @@
+body {
+  margin-top: 64px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90vw;
+  margin: auto;
+  @media #{$mq-desktop} {
+    max-width: 1024px;
+  }
+}
+
+@mixin botao-transparente {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+@mixin align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin justify-center {
+  display: flex;
+  justify-content: center;
+}
