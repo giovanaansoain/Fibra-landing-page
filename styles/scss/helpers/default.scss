@@ -21,6 +21,12 @@ a {
   padding: 0;
 }
 
+@mixin botao-vermelho {
+  background-color: $cor-padrao;
+  border: none;
+  border-radius: 50px;
+}
+
 @mixin align-center {
   display: flex;
   align-items: center;
