@@ -489,9 +489,18 @@ a {
 
 #top .cover {
   position: relative; }
+  @media (min-width: 900px) {
+    #top .cover {
+      height: 350px; } }
   #top .cover img {
     position: relative;
     width: 100vw; }
+    @media (min-width: 900px) {
+      #top .cover img {
+        height: 350px;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; } }
   #top .cover .text {
     position: absolute;
     top: 85px;
@@ -515,7 +524,7 @@ a {
   #top .cover::after {
     content: "";
     width: 100%;
-    height: 99%;
+    height: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.63);
     top: 0;

@@ -1,9 +1,17 @@
 #top {
   .cover {
     position: relative;
+    @media #{$mq-desktop} {
+      height: 350px;
+    }
     img {
       position: relative;
       width: 100vw;
+      @media #{$mq-desktop} {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+      }
     }
     .text {
       position: absolute;
@@ -31,7 +39,7 @@
     &::after {
       content: "";
       width: 100%;
-      height: 99%;
+      height: 100%;
       position: absolute;
       background-color: rgba(0, 0, 0, 0.63);
       top: 0;
