@@ -25,7 +25,8 @@
     }
     img {
       width: 100%;
-      &.close-menu {
+      &.open-menu.hide,
+      &.close-menu.hide {
         display: none;
       }
     }
