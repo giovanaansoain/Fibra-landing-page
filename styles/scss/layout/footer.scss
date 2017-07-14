@@ -4,12 +4,15 @@ footer {
   height: 150px;
   @include justify-center;
   flex-direction: column;
+  @media #{$mq-desktop} {
+    @include full-viewport($height: 10vh);
+  }
   nav {
     @include justify-center;
     a {
       padding: 10px;
       svg {
-        height: 24px;
+        height: 18px;
         fill:#b2b2b2;
         &:hover {
           fill: $cor-padrao;

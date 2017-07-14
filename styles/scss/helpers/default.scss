@@ -36,3 +36,10 @@ a {
   display: flex;
   justify-content: center;
 }
+
+@mixin full-viewport($height: 100vh) {
+  height: $height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

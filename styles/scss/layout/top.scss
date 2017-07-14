@@ -1,14 +1,24 @@
 #top {
+  @media #{$mq-desktop} {
+    @include full-viewport(90vh);
+  }
+  &.container {
+    width: 100vw;
+    #{$mq-desktop} {
+      max-width: 1024px;
+    }
+  }
   .cover {
     position: relative;
     @media #{$mq-desktop} {
-      height: 350px;
+      margin-top: 62px;
+      height: 450px;
     }
     img {
       position: relative;
       width: 100vw;
       @media #{$mq-desktop} {
-        height: 350px;
+        height: 450px;
         width: 100%;
         object-fit: cover;
       }
@@ -23,6 +33,9 @@
       z-index: 999;
       @media #{$mq-tablet} {
         top: 210px;
+      }
+      @media #{$mq-desktop} {
+        top: 170px;
       }
       p {
         font-size: 32px;
@@ -50,10 +63,14 @@
     font-size: 18px;
     font-weight: 300;
     border-bottom: solid 1px #b2b2b2;
-    padding-bottom: 32px;
+    padding: 18px 0 32px 0;
     @media #{$mq-tablet} {
       line-height: 24px;
-      font-weight: 400;
+    }
+    @media #{$mq-desktop} {
+      width: 80%;
+      padding: 18px 10% 150px 10%;
+      margin-top: 30px;
     }
   }
 }
