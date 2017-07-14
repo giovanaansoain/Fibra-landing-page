@@ -454,8 +454,9 @@ a {
     #header #logo a {
       width: 88px;
       height: 50px; }
-      #header #logo a img {
-        height: 50px; }
+      #header #logo a svg {
+        height: 50px;
+        fill: #222221; }
   #header .menu-hamburguer {
     display: none;
     width: 100%; }
