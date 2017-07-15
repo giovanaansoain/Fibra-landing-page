@@ -525,6 +525,8 @@ a {
           padding: 10px; }
           #header .menu-hamburguer ul li a:hover {
             color: #e40523; }
+    #header .menu-hamburguer.show {
+      display: block; }
 
 @media (min-width: 900px) {
   #top {

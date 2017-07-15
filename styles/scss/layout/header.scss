@@ -101,5 +101,8 @@
         }
       }
     }
+    &.show {
+      display: block;
+    }
   }
 }
