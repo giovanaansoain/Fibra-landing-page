@@ -1,8 +1,7 @@
 .information {
   border-bottom: solid 1px #b2b2b2;
-  padding-bottom: 32px;
+  padding-bottom: 80px;
   @media #{$mq-desktop} {
-    @include full-viewport();
     border-bottom: none;
   }
   h2 {

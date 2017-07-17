@@ -1,6 +1,6 @@
 .form {
   @media #{$mq-desktop} {
-    @include full-viewport(80vh);
+    padding-bottom: 64px;
   }
   h2 {
     text-align: center;

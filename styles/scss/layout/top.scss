@@ -1,6 +1,6 @@
 #top {
   @media #{$mq-desktop} {
-    @include full-viewport(90vh);
+    margin-top: 90px;
   }
   &.container {
     width: 100vw;
@@ -66,7 +66,7 @@
     padding: 18px 0 32px 0;
     @media #{$mq-desktop} {
       width: 80%;
-      padding: 18px 10% 150px 10%;
+      padding: 18px 10% 64px 10%;
       margin-top: 30px;
       border-bottom: none;
     }

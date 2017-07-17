@@ -530,20 +530,7 @@ a {
 
 @media (min-width: 900px) {
   #top {
-    height: 90vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
+    margin-top: 90px; } }
 
 #top.container {
   width: 100vw; }
@@ -603,7 +590,7 @@ a {
   @media (min-width: 900px) {
     #top .about {
       width: 80%;
-      padding: 18px 10% 150px 10%;
+      padding: 18px 10% 64px 10%;
       margin-top: 30px;
       border-bottom: none; } }
   #top .about p {
@@ -615,23 +602,9 @@ a {
 
 .information {
   border-bottom: solid 1px #b2b2b2;
-  padding-bottom: 32px; }
+  padding-bottom: 80px; }
   @media (min-width: 900px) {
     .information {
-      height: 100vh;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
       border-bottom: none; } }
   .information h2 {
     text-align: center;
@@ -683,20 +656,7 @@ a {
 
 @media (min-width: 900px) {
   .form {
-    height: 80vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
+    padding-bottom: 64px; } }
 
 .form h2 {
   text-align: center;
