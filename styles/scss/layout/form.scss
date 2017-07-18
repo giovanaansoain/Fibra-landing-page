@@ -1,6 +1,6 @@
 .form {
   @media #{$mq-desktop} {
-    padding-bottom: 64px;
+    padding: 16px 0 64px 0;
   }
   h2 {
     text-align: center;
@@ -28,18 +28,66 @@
         font-weight: 300;
       }
     }
-  }
-  button {
-    @include botao-vermelho;
-    display: block;
-    width: 100%;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-    @media #{$mq-tablet} {
-      width: 330px;
-      margin: 0 auto;
+    button {
+      @include botao-vermelho;
       display: block;
+      width: 100%;
+      height: 40px;
+      color: #fff;
+      font-size: 16px;
+      @media #{$mq-tablet} {
+        width: 330px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+  .bg {
+    &.hide {
+      display: none;
+    }
+    &.show {
+      display: block;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.63);
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: 9999999999999;
+    }
+  }
+  .msg-form {
+    &.hide {
+      display: none;
+    }
+    &.show {
+      box-shadow: 0px -1px 8px 0px rgba(0, 0, 0, 0.11);
+      padding: 32px 0;
+      position: fixed;
+      z-index: 99999999999999;
+      top: 25%;
+      left: 5%;
+      background: #fff;
+      width: 90vw;
+      @include align-center;
+      flex-direction: column;
+    }
+    h3 {
+      text-align: center;
+      margin: 0;
+    }
+    p {
+      text-align: center;
+    }
+    button {
+      @include botao-vermelho;
+      display: block;
+      width: 210px;
+      height: 40px;
+      color: #fff;
+      font-size: 16px;
+      margin-top: 24px;
     }
   }
 }

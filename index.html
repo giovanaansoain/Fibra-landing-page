@@ -114,13 +114,21 @@
 
     <section id="quero-participar" class="form container">
       <h2>Quero participar</h2>
-      <form action="">
-        <input type="text" name="Nome" placeholder="Nome">
-        <input type="email" name="Email" placeholder="Email">
-        <input type="url" name="Facebook" placeholder="Facebook">
-        <input type="url" name="Site" placeholder="Site">
+      <form id="form-interest" action="#">
+        <input name="Nome" placeholder="Nome*" required>
+        <input type="email" name="Email" placeholder="Email*" required>
+        <input name="Facebook" placeholder="Facebook">
+        <input name="Site" placeholder="Site">
+
+        <button type="submit" name="Enviar">Enviar</button>
       </form>
-      <button type="submit" name="Enviar">Enviar</button>
+
+      <div class="bg hide"></div>
+      <div class="msg-form hide">
+        <h3>Pronto!</h3>
+        <p>Obrigada pelo interesse, em breve teremos novidades. Fique ligado!</p>
+        <button id="fechar-msg" type="button" name="ok">Ok</button>
+      </div>
     </section>
 
     <footer>
@@ -141,6 +149,9 @@
         </a>
       </nav>
       <p>Fibra © 2017 - todos os direitos reservados | CNPJ: 27.589.193/0001-14</p>
+
+      <script type="text/javascript" src="js/axios.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
     </footer>
 
   </body>

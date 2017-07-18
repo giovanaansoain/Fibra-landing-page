@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  // ABRIR E FECHAR MENU
   var botaoMenu = $("#header button");
   var navMenu = $("#header nav");
   var openMenu = $(".open-menu");
@@ -23,11 +24,12 @@ $(document).ready(function(){
     }
   }
 
+  // ANIMAÇAO SCROLL
   function transitionID(e) {
     e.preventDefault();
 
     id = this.id.replace("link-", "");
-    var offset = $("#"+id).offset().top - 60;
+    var offset = $("#"+id).offset().top - 120;
     $('html,body').animate({ scrollTop: offset }, 'slow');
   }
 
