@@ -10,8 +10,8 @@ $(document).ready(function(){
   botaoMenu[0].onclick = openCloseMenu;
 
   for (var i = 0; i < linkNav.length; i++) {
-    linkNav[i].onclick = openCloseMenu;
-    linkNav[i].onclick = transitionID;
+    linkNav[i].click(openCloseMenu);
+    linkNav[i].click(transitionID);
   }
 
   function openCloseMenu() {
